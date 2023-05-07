@@ -5,7 +5,7 @@
 ### Specification
 Implementing a genetic algorithm for optimizing a two-dimensional vehicle design on a given terrain. Loosely based on [Boxcar2D](http://www.boxcar2d.com/about.html).
 
-###Introduction
+### Introduction
 The idea is to randomly generate a pool of vehicle designs which are evaluated against a given terrain using simple physics simulation approach.
 A score is assigned to each vehicle depending on how far the vehicle travels without stopping.
 The genetic algorithm is divided into three distinct parts, namely selection, crossover and mutation phase.
@@ -15,7 +15,7 @@ Selecting the n-best designs (those with the highest score) is not always the be
 In the crossover phase, two vehicle designs are fused together to produce offspring.
 In order to increase diversity, the mutation phase randomly changes properties of a given offspring.
 
-###Implementation
+### Implementation
 The above problem doesn't belong to the “classic” parallelization problems.
 The challenge in this assignment is to utilize the parallel nature of the GPU wherever possible and also evaluate the boundaries of GPU computing.
 Parallelization is achieved on vehicle design level, meaning that multiple vehicle designs are evaluated in parallel.
@@ -39,18 +39,18 @@ Different aspects of the genetic algorithm can also be parallelized using parall
 - Visualization
 
 
-###Dependancies
+### Dependancies
  - pyopencl
  - PyQt 4.8 (only for visualization)
 
 Tested on Windows 7 & Windows 8.1 using python 2.7.9, pyopencl-2015.1 and PyQt4-4.11.3
 
-###Roadmap
+### Roadmap
 - full PEP8 compliance
 - more sophisticated selection strategies
 - improved physics simulation
 
-###Acknowledgments
+### Acknowledgments
 This project was part of the course "Praktikum General-Purpose Computation on GPUs" at the [ Computer Graphics Group](https://cg.ivd.kit.edu/english/index.php), Karlsruher Institut für Technologie (KIT).
 
 Feedback is greatly appreciated!
